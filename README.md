@@ -156,6 +156,9 @@ In general, to run a file with name `file_name` (containing a ECA) that is at a 
 Catch2 version 2 can be obtained from [Catch2 github repository](https://github.com/catchorg/Catch2). Please download the `v2.x` branch, it can be downloaded using the command: 
 
     git clone https://github.com/catchorg/Catch2.git -b v2.x
+    cd Catch2
+    cmake -Bbuild -H. -DBUILD_TESTING=OFF
+    sudo cmake --build build/ --target install
 
 Please, refer to Catch2 tutorial for [installation instructions](https://github.com/catchorg/Catch2/blob/master/docs/cmake-integration.md#installing-catch2-from-git-repository).
 
